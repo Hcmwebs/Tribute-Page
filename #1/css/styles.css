@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 100%;
+  overflow: hidden;
+}
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.far {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+.container-wrapper {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/*++header++*/
+.header-wrapper {
+  background-color: rgba(11, 155, 238, 0.842);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.school-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+#notification-sidebar {
+  padding: 5px;
+  border: none;
+  background-color: transparent;
+}
+.school-name i {
+  color: #fff;
+  opacity: 0.6;
+  padding: 5px;
+}
+.school-name i:hover {
+  background-color: rgba(0, 0, 0, 0.096);
+}
+.school-name p {
+  padding-left: 10px;
+}
