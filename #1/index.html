@@ -11,42 +11,44 @@
     <title>educa replica</title>
   </head>
   <body>
+    <header class="header-wrapper">
+      <div class="school-name">
+        <button id="notification-sidebar">
+          <i class="far fa-toolbox fa-2x"></i>
+        </button>
+
+        <p>hcmwebs</p>
+      </div>
+      <div class="btn-header-wrapper">
+        <button class="notification" id="notify">
+          <i class="far fa-bell fa-2x"></i>Notifications
+        </button>
+        <button class="btn-settings" id="settings">
+          <i class="far fa-cogs fa-2x"></i>Settings
+        </button>
+      </div>
+    </header>
     <div class="container-wrapper">
-      <header class="header-wrapper">
-        <div class="school-name">
-          <button id="notification-sidebar">
-            <i class="far fa-toolbox fa-2x"></i>
-          </button>
-
-          <p>Schoolname</p>
-        </div>
-        <div class="btn-header-wrapper">
-          <button class="notification" id="notify">
-            <i class="far fa-bell"></i>Notifications
-          </button>
-          <button class="btn-settings" id="settings">
-            <i class="far fa-cogs"></i>settings
-          </button>
-        </div>
-      </header>
-
       <nav class="nav-wrapper">
-        <div class="logo-community-wrapper">Logo,community,</div>
-        <div class="logo-img-wrapper"></div>
-        <button class="community-wrapper" id="community">Community</button>
-        <button class="staff-wrapper" id="staff">Staff</button>
-        <button class="student-wrapper" id="students">students</button>
+        <div class="logo-community-wrapper">
+          <div class="logo-img-wrapper">
+            <img src="img/logo.png" alt="Logo-image">
+          </div>
+          <div class="buttons">
+            <button class="community-wrapper" id="community">Community</button>
+            <button class="staff-wrapper" id="staff">Staff</button>
+            <button class="student-wrapper" id="students">Students</button>
+          </div>
+        </div>
       </nav>
 
       <main class="main-wrapper">
         <section class="section-wrapper">
           <div class="title">
             <h1>Message board</h1>
-            <div class="parent+print-wrapper">
-              <button class="parent-story">
-                <a href="#" target="_blank">+create parent story </a>
-              </button>
-              <a href="#" target="_blank">view</a>
+            <div class="parent-print-wrapper">
+              <a href="#" id="parent-story"><span>+</span>create parent story</a>
+              <a href="#" id="view">View <span><i class="far fa-chevron-down"></i></span></a>
             </div>
           </div>
           <div class="video-text-wrapper">
@@ -57,7 +59,7 @@
             <div>
               <a href="#">print</a>
             </div>
-            <video src=""></video>
+            <video src="#" width="450" height="350" controls>Video is not supported</video>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
               atque ipsum quae, nihil ipsa magni fuga recusandae ut odit, vel
