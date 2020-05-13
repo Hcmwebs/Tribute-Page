@@ -150,6 +150,7 @@ section{
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0 40px;
 }
 
 .parent-print-wrapper{
@@ -191,10 +192,83 @@ color: #000;
 border-bottom: 1px solid transparent;
 }
 #view:hover{
-  border-bottom-color: #eb5f37;;
+  border-bottom-color: #eb5f37;
 }
 
 #view span{
   padding: 5px;
   color: #eb5f37;
+}
+.video-text-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  text-align: left;
+  background-color: #fff;
+  color: #eb5f37;
+  padding: 0 40px;
+}
+
+.video-text-wrapper >a {
+  text-decoration: none;
+  color: #eb5f37;
+  padding: 10px;
+}
+
+.video-text-wrapper >a:hover{
+  text-decoration: underline;
+
+}
+.subtitle{
+  display: flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.subtitle a{
+  color: #eb5f37;
+}
+.subtitle a:hover{
+  text-decoration: underline;
+}
+.subtitle h2{
+  color: #eb5f37;
+}
+
+small{
+  margin: 10px 0;
+}
+
+.print{
+align-self: flex-end;
+padding: 10px;
+color: #eb5f37;
+margin-bottom:20px ;
+}
+.print > a{
+  color: #eb5f37;
+  padding: 10px;
+  border: none;
+}
+
+.print a:hover{
+  text-decoration: underline;
+}
+#date{
+  font-family: sans-serif;
+  font-size: 1rem;
+  color: #000;
+  border: none;
+}
+
+hr{
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.247);
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin: 20px 0;
+  
 }
