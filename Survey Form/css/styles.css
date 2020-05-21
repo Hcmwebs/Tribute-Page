@@ -54,7 +54,8 @@ label {
   top: 0;
   left: 0;
   display: block;
-  background: url("../Img/bg.jpg") no-repeat center center/cover;
+  background: var(--overlay-color) url("../Img/bg.jpg") no-repeat center
+    center/cover;
   z-index: -1;
 }
 
