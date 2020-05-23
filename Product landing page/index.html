@@ -3,50 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Product Landing Page</title>
   </head>
   <body>
     <div class="wrapper">
       <header id="header" class="header-wrapper">
         <div class="header-img-wrapper">
-          <img src="#" alt="" id="header-img" />
+          <img src="img/TheArabica.png" alt="" id="header-img" />
         </div>
-        <nav id="nav-bar">
-          <div class="nav-wrapper">
-            <ul>
-              <li><a href="#section-about" class="nav-link">about</a></li>
-              <li><a href="#section-products" class="nav-link">products</a></li>
-              <li><a href="#section-contact" class="nav-link">contact</a></li>
-            </ul>
-          </div>
+        <nav id="nav-bar" class="nav-wrapper">
+          <ul>
+            <li><a href="#section-about" class="nav-link">about</a></li>
+            <li><a href="#section-products" class="nav-link">product</a></li>
+            <li><a href="#section-contact" class="nav-link">contact</a></li>
+          </ul>
         </nav>
       </header>
       <main id="main">
         <div class="main-wrapper">
-          <section>
+          <section id="section">
             <div class="section-wrapper">
               <section id="section-about">
                 <div class="video-wrapper">
-                  <video src="" id="video"></video>
+                  <video
+                    id="video"
+                    width="400px"
+                    height="700px"
+                    autoplay
+                    muted
+                    loop
+                  >
+                    <source src="/vid/coffee.mp4" />
+                  </video>
                 </div>
               </section>
-              <section id="section-products">
-                <div class="section-products-wrapper">
-                  <div class="product-item"></div>
-                  <div class="product-item"></div>
-                  <div class="product-item"></div>
+              <section id="section-product">
+                <div class="section-product-wrapper">
+                   <h1>Lorem ipsum dolor sit amet.</h1>
+                  <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Quod pariatur fuga dicta dolor laboriosam asperiores!
+                  </p>
                 </div>
               </section>
               <section id="section-contact">
                 <div class="section-contact-wrapper">
                   <form action="" id="form">
-                    <label for="name" class="label-name">Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      placeholder="Enter your fullname"
-                      required
-                    />
                     <label for="email" id="label-email">Email</label>
                     <input
                       type="email"
@@ -54,13 +57,6 @@
                       placeholder="Enter your Email"
                       required
                     />
-                    <textarea
-                      name="contact"
-                      id="contact"
-                      maxlength="200"
-                      placeholder="Enter your message"
-                    >
-                    </textarea>
                     <button id="submit-btn">
                       <input type="submit" id="submit" />
                       <a
