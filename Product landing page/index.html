@@ -10,20 +10,19 @@
     <div class="wrapper">
       <header id="header" class="header-wrapper">
         <div class="header-img-wrapper">
-          <img src="img/TheArabica.png" alt="" id="header-img" />
+          <img src="img/TheArabica.png" alt="La Arabica coffee refinery logo" id="header-img" />
         </div>
         <nav id="nav-bar" class="nav-wrapper">
           <ul>
             <li><a href="#section-about" class="nav-link">about</a></li>
-            <li><a href="#section-products" class="nav-link">product</a></li>
+            <li><a href="#section-product" class="nav-link">product</a></li>
             <li><a href="#section-contact" class="nav-link">contact</a></li>
           </ul>
         </nav>
       </header>
       <main id="main">
-        <div class="main-wrapper">
-          <section id="section">
-            <div class="section-wrapper">
+        <section id="section">
+           <div class="two-grid">
               <section id="section-about">
                 <div class="video-wrapper">
                   <video
@@ -34,42 +33,47 @@
                     muted
                     loop
                   >
-                    <source src="/vid/coffee.mp4" />
+                    <source src="vid/coffee.mp4" />
                   </video>
                 </div>
               </section>
+
               <section id="section-product">
                 <div class="section-product-wrapper">
-                   <h1>Lorem ipsum dolor sit amet.</h1>
+                  <h1><strong> The Refined Arabica Coffee</strong></h1>
                   <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Quod pariatur fuga dicta dolor laboriosam asperiores!
+                    It is more refined and full of aromas <br />
+                    <strong><em>Remember!</em></strong> There is always a
+                    solution with a cup of coffee
+                    <strong>Refined Arabica!</strong>
                   </p>
                 </div>
               </section>
+            </div>
+
+            <div class="one-grid">
               <section id="section-contact">
                 <div class="section-contact-wrapper">
-                  <form action="" id="form">
-                    <label for="email" id="label-email">Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      placeholder="Enter your Email"
-                      required
-                    />
-                    <button id="submit-btn">
-                      <input type="submit" id="submit" />
-                      <a
-                        href="https://www.freecodecamp.com/email-submit"
-                        target="_blank"
-                      ></a>
-                    </button>
-                  </form>
+                  <p>We will blend it just the way you like it.</p>
+                  <div class="form-wrapper">
+                    <form action="https://www.freecodecamp.com/email-submit" target="_blank" id="form">
+                      <label for="email" id="label-email">Email</label>
+                      <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your Email"
+                        required />
+                      <button class="submit-btn">
+                        <input type="submit" id="submit"/>
+                      </button>
+                    </form>
+                    </form>
+                  </div> 
                 </div>
               </section>
             </div>
-          </section>
-        </div>
+        </section>
       </main>
     </div>
   </body>

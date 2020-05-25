@@ -2,8 +2,8 @@
 
 :root {
   --dark-brown: rgba(85, 60, 21, 0.99);
-  --light-brown: rgba(137, 99, 37, 0.99);
-  
+  --light-brown: rgba(137, 99, 37, 0.65);
+  --background: rgba(244, 161, 54, 0.99);
 }
 
 * {
@@ -19,19 +19,25 @@ body {
   letter-spacing: 5;
   color: #fff;
 }
-h1{
-    font-weight: 300;
-    font-size: 2.5rem;
-    text-align: center;
-    color:#fff;
-    margin-bottom: 1rem;
+strong,
+em {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
 }
 
-p{
-    font-size: 1.6rem;
-    font-weight: 300;
-    text-align: center;
-    padding: 0rem 0.5rem;
+h1 {
+  font-weight: 300;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #fff;
+  padding: 0.5rem 0;
+}
+
+p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  text-align: center;
+  padding: 0rem 0.5rem;
 }
 ul {
   list-style: none;
@@ -40,17 +46,27 @@ ul {
 }
 li {
   font-size: 1.6rem;
+  padding: 0.8rem 0;
 }
-a {
+a,
+.submit-btn,
+#submit {
   text-decoration: none;
   padding: 0.2rem 0.8rem;
   color: #fff;
   border-radius: 0.3rem;
   transition: all, 1s ease;
 }
-a:hover {
-  background-color: var(--light-brown);
+a:hover,
+.submit-btn:hover {
+  background-color: var(--dark-brown);
   transform: scale(0.98);
+}
+
+label,
+input {
+  font-size: 1.1rem;
+  padding: 0.5rem;
 }
 
 .wrapper {
@@ -60,7 +76,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
-  background-color: var(--dark-brown);
+  background-color: var(--background);
 }
 
 /*++++header++++*/
@@ -92,7 +108,6 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /*background-color: var(--light-brown);*/
 }
 
 @media (min-width: 576px) {
@@ -116,62 +131,147 @@ a:hover {
 #main {
   display: grid;
   grid-template-columns: 1fr;
+  max-width: 1000px;
 }
 
 #section {
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
-.section-wrapper {
-  width: 100%;
-  height: 100%;
+
+/*+section about++*/
+.two-grid {
   display: grid;
   grid-template-columns: 1fr;
-  margin: auto;
-  background-color: #fff;
-  align-items: center;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+  padding: 0;
 }
 #section-about {
   width: 100%;
   height: 500px;
-  margin: auto;
+  margin: 0 auto;
+  background-color: var(--light-brown);
 }
 
 .video-wrapper {
   width: 100%;
-  height: 500px;
-  margin: 0;
+  height: 100%;
+  margin: 0 auto;
   padding: 0;
   border-radius: 0.3rem;
-  background: url(../img/coffee-logo.jpg) no-repeat center center/cover;
 }
 #video {
   width: 100%;
   height: 100%;
+  border-radius: 0.3rem;
   margin: 0;
   padding: 0;
 }
+
+/*+section product++*/
 #section-product {
   width: 100%;
   height: 500px;
+  margin: auto;
 }
 .section-product-wrapper {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0;
   background-color: var(--light-brown);
+}
+.section-product-wrapper h1 {
+  margin-bottom: 2rem;
+}
+
+/*+section contact++*/
+.one-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  position: fixed;
+  top: 327px;
+}
+
+#section-contact {
+  width: 500px;
+  height: 100px;
+  margin: auto;
+  padding: 2rem 0;
+  background-color: var(--light-brown);
+}
+.section-contact-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section-contact-wrapper p {
+  font-size: 1.1rem;
+}
+.form-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+#email {
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  border: none;
+}
+.submit-btn {
+  cursor: pointer;
+  border: none;
+  margin-left: 0.5rem;
+  background-color: var(--light-brown);
+}
+#submit {
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 0.5rem;
 }
 
 @media (min-width: 576px) {
-  .section-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0.5rem;
-    align-items: center;
+  #section-about,
+  #section-product {
+    width: 500px;
   }
+  .one-grid {
+    top: 120px;
+  }
+
   .video-wrapper {
     background: none;
+  }
+}
+
+@media (min-width: 780px) {
+  .two-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .one-grid {
+    top: 80%;
   }
 }
