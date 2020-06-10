@@ -132,7 +132,7 @@ p {
   transition: all 1s ease-in-out;
 }
 .header__hamburger:hover {
-  color: var(--lightblue);
+  color: #fff;
   background-color: var(--Overlay);
   transform: scale(0.8);
 }
