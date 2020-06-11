@@ -1,1 +1,1 @@
-These are my  100 projects that I have managed to code in 100 days!!! 
+This is part of my projects that I have managed to code in 100 days!!! 
